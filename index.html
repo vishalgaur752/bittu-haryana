@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bittu Haryana</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/8Z4yG6Dq7LwzU4Vt6Z7ZoO9fEnAd00W5Am8H4Y8" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/8Z4yG6Dq7LwzU4Vt6Z7ZoO9fEnAd00W5Am8H4Y8" crossorigin="anonymous">
 
     <style>
         * {
@@ -31,6 +32,7 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+
         .coming-soon-section {
             display: flex;
             flex-direction: column;
@@ -72,6 +74,7 @@
             width: 150px;
             margin-bottom: 30px;
         }
+
         .coming-soon-section .logo {
             border-radius: 50%;
             height: 200px;
@@ -98,15 +101,18 @@
             color: white;
             text-decoration: none;
         }
+
         .joinChannel {
             color: yellow;
             text-decoration: none;
         }
+
         .joinChannel:hover {
             color: white;
             cursor: pointer;
             text-decoration: none;
         }
+
         /* .btn-telegram i {
             margin-right: 8px;
         } */
@@ -131,22 +137,15 @@
         }
     </style>
     <script>
-        // Function to redirect after 5 seconds
+        // Function to redirect immediately
         function redirectToTelegram() {
-            setTimeout(function() {
-                window.location.href = "https://t.me/+3TPKfABraF4xNDZl"; // Replace with your Telegram link
-            }, 1000);
-            
-            // Countdown display
-            let countdown = 1;
-            setInterval(function() {
-                if (countdown > 0) {
-                    countdown--;
-                    document.getElementById("countdown").textContent = countdown;
-                }
-            }, 0.000);
+            window.location.href = "https://t.me/+3TPKfABraF4xNDZl"; // Replace with your Telegram link
         }
+
+        // Call the function immediately to redirect
+        redirectToTelegram();
     </script>
+
 </head>
 
 <body onload="redirectToTelegram()">
