@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bittu Haryana</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/8Z4yG6Dq7LwzU4Vt6Z7ZoO9fEnAd00W5Am8H4Y8" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        .mainContainer {
+            background-image: url("./images/bittuharyan.jpg     ");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .coming-soon-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.83);
+            color: white;
+        }
+
+        /* Headings */
+        h1 {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid yellow;
+            padding: 15px 30px;
+            margin-bottom: 15px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #d3d3d3;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        /* Timer */
+        .timer {
+            font-size: 2.5em;
+            font-weight: 500;
+            color: #f1c40f;
+            margin-bottom: 30px;
+        }
+
+        /* Logo Image */
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+        .coming-soon-section .logo {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+
+        /* Telegram Button */
+        .btn-telegram {
+            background-color: #f1c40f;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .btn-telegram:hover {
+            background-color: #229ED9;
+            color: white;
+            text-decoration: none;
+        }
+        .joinChannel {
+            color: yellow;
+            text-decoration: none;
+        }
+        .joinChannel:hover {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        /* .btn-telegram i {
+            margin-right: 8px;
+        } */
+
+        /* Final Heading */
+
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+                padding: 10px 20px;
+            }
+
+            .timer {
+                font-size: 2em;
+            }
+
+            .btn-telegram {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    <script>
+        // Function to redirect after 5 seconds
+        function redirectToTelegram() {
+            setTimeout(function() {
+                window.location.href = "https://t.me/+3TPKfABraF4xNDZl"; // Replace with your Telegram link
+            }, 3000);
+            
+            // Countdown display
+            let countdown = 3;
+            setInterval(function() {
+                if (countdown > 1) {
+                    countdown--;
+                    document.getElementById("countdown").textContent = countdown;
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+
+<body onload="redirectToTelegram()">
+
+    <div class="mainContainer">
+        <div class="coming-soon-section">
+            <!-- Headings -->
+            <h1>BITTU HARYANA</h1>
+            <h2>Prediction ka Zabardast Analyst</h2>
+
+            <!-- Countdown Timer -->
+            <div class="timer" id="countdown">00:00:00</div>
+
+            <!-- Logo Image -->
+            <img src="./images/mayanDics.jpg" alt="Logo" class="logo">
+            <!-- Replace with your logo URL -->
+
+            <!-- Button with Telegram Icon -->
+            <a href="https://t.me/your_telegram_channel" class="btn-telegram" target="_blank">
+                <i class="fab fa-telegram-plane"></i> JOIN THE TELEGRAM NOW <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <!-- Final Heading -->
+            <a class="joinChannel">Join Now For Regular Profit</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Redirecting to Telegram</h1>
+            <p class="lead">You will be redirected to our Telegram page in <span id="countdown">3</span> seconds.</p>
+            <hr class="my-4">
+            <p>If you're not redirected, <a href="https://t.me/+3TPKfABraF4xNDZl">click here</a>.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
